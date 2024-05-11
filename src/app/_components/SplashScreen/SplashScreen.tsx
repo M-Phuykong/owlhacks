@@ -2,13 +2,15 @@
 
 import React from 'react'
 import {motion } from 'framer-motion'
+
 import { useScrollBlock } from '@/app/_utilities/useScrollBlock'
 
 type Props = {}
 
 export default function SplashScreen({} : Props) {
 
-  const [blockScroll, allowScroll] = useScrollBlock()
+
+ const [blockScroll, allowScroll] = useScrollBlock()
 
   // Animation
   const blackBox = {
@@ -62,6 +64,7 @@ export default function SplashScreen({} : Props) {
     >
       <motion.svg variants={textContainer}
         className="absolute text-center left-0 right-0 w-full h-full z-50">
+
 
           <motion.text
             className="text-4xl font-bold fill-white"
